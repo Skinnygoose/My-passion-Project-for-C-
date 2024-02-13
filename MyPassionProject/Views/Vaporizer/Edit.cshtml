@@ -1,0 +1,28 @@
+﻿﻿@model MyPassionProject.Models.Vaporizer
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Vaporizer</h2>
+
+<form method="POST" action="/Vaporizer/Update/@Model.vaporizerId">
+    <input type="text" style="display:none;" name="VapourId" value="@Model.vaporizerId" />
+    <div>
+        <label>Name</label>
+        <input type="text" name="AnimalName" value="@Model.VaporizerName" />
+    </div>
+    <div>
+        <label>Flavour</label>
+        <input type="text" name="AnimalWeight" value="@Model.FlavourName" />
+    </div>
+    <div>
+        <label>Customer Review</label>
+        <input type="text" name="SpeciesId" value="@Model.CustomerRatings" />
+    </div>
+    <div>
+
+        <input type="submit" value="Update" />
+    </div>
+
+</form>

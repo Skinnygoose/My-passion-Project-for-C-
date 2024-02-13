@@ -1,0 +1,14 @@
+﻿@model MyPassionProject.Models.Vaporizer
+
+
+@{
+    ViewBag.Title = "View";
+}
+
+<a href="/Vaporier/List">Go back to list</a>
+<h2>@Model.VaporizerName</h2>
+<div>FlavourName: @Model.FlavourName </div>
+<div>Cost: @Model.BuyingPrice</div>
+<div>Selling Price: @Model.SellingPrice</div>
+<div>Customer Review @Model.CustomerRatings</div>
+<div>Profit @Model.Profit  Percent</div>

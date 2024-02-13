@@ -1,0 +1,15 @@
+﻿﻿@model IEnumerable<MyPassionProject.Models.Vaporizer>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+@foreach (var Vaporizer in Model)
+{
+    <h2><a href="/Vaporizer/Details/@Vaporizer.vaporizerId">@Vaporizer.FlavourName</a></h2>
+    <div>weight: @Vaporizer.CustomerRatings </div>
+    
+
+
+}
+

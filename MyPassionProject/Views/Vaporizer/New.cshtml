@@ -1,0 +1,33 @@
+﻿﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Vaporizer</h2>
+<form action="/Vaporizer/Create" method="POST">
+    <div>
+        <label>Name:</label> <input type="text" name="VaporizerName" />
+    </div>
+    <div>
+        <label>Flavour Name:</label> <input type="text" name="FlavourName" />
+    </div>
+    <div>
+        <label>Customer Review:</label> <input type="text" name="CustomerRatings" />
+    </div>
+    <div>
+        <label>Buying Cost:</label> <input type="number" name="BuyingPrice" />
+    </div>
+    <div>
+        <label>Selling Price:</label> <input type="number" name="SellingPrice" />
+    </div>
+    <div>
+        <label>Profit:</label> <input type="number" name="Profit in percentage" />
+    </div>
+
+
+    <div>
+        <input type="submit" value="Add Animal" />
+
+    </div>
+</form>
+
